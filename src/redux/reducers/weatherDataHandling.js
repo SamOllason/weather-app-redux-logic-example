@@ -2,7 +2,7 @@ import * as types from '../../actions/types';
 
 const initialState = {
     isFetching: false,
-    weatherSummary: "not weather data fetched yet"
+    weatherSummary: "no weather data fetched yet"
 };
 
 // Use ES6 default parameter to provide argument to arrow function
@@ -24,6 +24,7 @@ const weatherDataHandling = (state = initialState, action) => {
             return {
                 ...state,
                 isFetching: false,
+                weatherSummary: action.payload.weather[0].description,
             };
 
         case types.GET_WEATHER_FOR_CITY_FAILURE:

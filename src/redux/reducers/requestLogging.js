@@ -2,7 +2,6 @@ import * as types from '../../actions/types';
 
 const initialState = {
     numberOfRequests: 0,
-    weatherSummary: "not selected city"
 };
 
 // Use ES6 default parameter to provide argument to arrow function

@@ -7,8 +7,7 @@ import store from "./redux/appStore";
 import * as serviceWorker from './serviceWorker';
 
 // The Provider that we use from react-redux
-// allows our store to be accessed in 'App' and its child components
-
+// allows our store to be accessed in 'App' and all child components
 ReactDOM.render(
     <Provider store={store}>
         <App />

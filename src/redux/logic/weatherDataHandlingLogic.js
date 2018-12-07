@@ -4,25 +4,26 @@ import axios from 'axios';
 
 const getWeatherDataLogic = createLogic({
     type: types.GET_WEATHER_FOR_CITY,  // Respond to actions of this type
-    // cancelType: USER_FETCH_CANCEL, // cancel when this action is dispatched
-    latest: true, // only provide the latest response if fired many times
+    latest: true, // Only provide the latest response if fired many times
 
-    processOptions: { // options influencing the process hook, default {}
-        dispatchReturn: true, // automatically dispatch the actions below from the resolved/rejected promise
+    processOptions: {
+        dispatchReturn: true, // Automatically dispatch the actions below from the resolved/rejected promise
 
-        successType: types.GET_WEATHER_FOR_CITY_SUCCESSFUL,
-        failType: types.GET_WEATHER_FOR_CITY_FAILURE       // use this action type for errors
+        successType: types.GET_WEATHER_FOR_CITY_SUCCESSFUL, // If promise success, dispatch this action
+        failType: types.GET_WEATHER_FOR_CITY_FAILURE // If promise fails, dispatch this action
     },
 
-    // Here we declare our promise inside a process.
-    // When the promise returns one of the actions above will be processed
+    // Declare our promise inside a process.
+    // When promise returns one of the actions above will be processed
     process({ action }) {
         console.log('started process with action type: ' + action.type);
-        return axios(`api.openweathermap.org/data/2.5/weather?q=London`)
+        console.log('started process with action payload: ' + action.payload);
+
+        return axios(`https://api.openweathermap.org/data/2.5/weather?q=${action.payload}&APPID=b0a33ce7b1e3c397415e4ae403b6a3fd`)
             .then(resp => resp.data);
     }
 });
 
 export default [
-    ...getWeatherDataLogic
+    getWeatherDataLogic
 ];
