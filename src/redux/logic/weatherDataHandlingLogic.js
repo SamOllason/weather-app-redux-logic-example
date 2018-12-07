@@ -2,6 +2,8 @@ import * as types from '../../actions/types';
 import { createLogic } from 'redux-logic';
 import axios from 'axios';
 
+const appId = "b0a33ce7b1e3c397415e4ae403b6a3fd";
+
 const getWeatherDataLogic = createLogic({
     type: types.GET_WEATHER_FOR_CITY,  // Respond to actions of this type
     latest: true, // Only provide the latest response if fired many times
@@ -13,13 +15,13 @@ const getWeatherDataLogic = createLogic({
         failType: types.GET_WEATHER_FOR_CITY_FAILURE // If promise fails, dispatch this action
     },
 
-    // Declare our promise inside a process.
+    // Declare our promise inside a process
     // When promise returns one of the actions above will be processed
     process({ action }) {
         console.log('started process with action type: ' + action.type);
         console.log('started process with action payload: ' + action.payload);
 
-        return axios(`https://api.openweathermap.org/data/2.5/weather?q=${action.payload}&APPID=b0a33ce7b1e3c397415e4ae403b6a3fd`)
+        return axios(`https://api.openweathermap.org/data/2.5/weather?q=${action.payload}&APPID=${appId}`)
             .then(resp => resp.data);
     }
 });

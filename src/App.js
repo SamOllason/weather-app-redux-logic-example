@@ -45,13 +45,10 @@ class App extends Component {
     return (
       <div style={appStyles.wholeApp}>
 
-          {/*<div >*/}
-            <h1 style={appStyles.titleContainerStyle}>Weather app</h1>
-          {/*</div>*/}
-
+          <h1 style={appStyles.titleContainerStyle}>Weather app</h1>
 
           <div style={appStyles.headerContainerStyle}>
-              <p>Simple exmaple of Redux and Redux-Logic</p>
+              <p>Simple example of Redux and Redux-Logic</p>
               <p>Article and source code</p>
           </div>
 
