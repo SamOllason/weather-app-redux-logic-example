@@ -5,7 +5,6 @@ const initialState = {
     weatherSummary: "no weather data fetched yet"
 };
 
-// Use ES6 default parameter to provide argument to arrow function
 const weatherDataHandling = (state = initialState, action) => {
     switch (action.type) {
 

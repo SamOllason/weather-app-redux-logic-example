@@ -4,22 +4,21 @@ import { createLogicMiddleware } from 'redux-logic';
 import rootLogic from './logic/';
 import axios from 'axios';
 
-// Dependencies for logic
+// Dependencies for Logic
 const deps = {
     httpClient: axios
 };
 
 // Create middleware
-const logicMiddleware    = createLogicMiddleware(rootLogic, deps);
+const logicMiddleware = createLogicMiddleware(rootLogic, deps);
 
 // Prepare middleware to ensure Redux can use it
 const composedMiddleware = compose(applyMiddleware(logicMiddleware));
 
-// Store is where application state is held.
-// Create store with reducers and our logic
+// Our Redux Store is where application state is held
+// Create store with reducers and all our Logic
 export default createStore(rootReducer,composedMiddleware);
 
-
-// NOTE:
-// If we were using without redux-logic we would only need this line:
+// NOTE, for information only:
+// If we were just using Redux and not using Redux-Logic we would only need this line:
 // export default createStore(rootReducer);

@@ -30,6 +30,7 @@ class App extends Component {
 
         this.props.actions.getWeatherData(city);
     }
+
   render() {
 
       const weatherSummaryComponent = this.props.isFetching ?

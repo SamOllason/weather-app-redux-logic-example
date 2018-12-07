@@ -1,3 +1,11 @@
+## Weather app created with Redux-Logic
+
+This is a simple application that displays the weather in 3 cities around the world. Users click a button
+which fetches data from an Open Weather Map API. This application is a basic example of using Redux-Logic
+with React and Redux for handling asynchronous behaviour.
+
+Please see the accompanying tutorial [here](https://medium.com/@sam_ollason).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -42,4 +50,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-# redux-logic-basic-example-weather-app
+

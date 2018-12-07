@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/weather-app-redux-logic-simple-example/precache-manifest.0f1b489ad3039dd65c332618e29b81b8.js"
+  "/weather-app-redux-logic-example/precache-manifest.48863b2223fb69d8c03b934ae1264e7a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/weather-app-redux-logic-simple-example/index.html", {
+workbox.routing.registerNavigationRoute("/weather-app-redux-logic-example/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

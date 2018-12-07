@@ -1,13 +1,13 @@
 {
-  "main.css": "/weather-app-redux-logic-simple-example/static/css/main.1f4270f4.chunk.css",
-  "main.js": "/weather-app-redux-logic-simple-example/static/js/main.126ac281.chunk.js",
-  "main.js.map": "/weather-app-redux-logic-simple-example/static/js/main.126ac281.chunk.js.map",
-  "static/js/1.eafd4dc2.chunk.js": "/weather-app-redux-logic-simple-example/static/js/1.eafd4dc2.chunk.js",
-  "static/js/1.eafd4dc2.chunk.js.map": "/weather-app-redux-logic-simple-example/static/js/1.eafd4dc2.chunk.js.map",
-  "runtime~main.js": "/weather-app-redux-logic-simple-example/static/js/runtime~main.b7844177.js",
-  "runtime~main.js.map": "/weather-app-redux-logic-simple-example/static/js/runtime~main.b7844177.js.map",
-  "static/css/main.1f4270f4.chunk.css.map": "/weather-app-redux-logic-simple-example/static/css/main.1f4270f4.chunk.css.map",
-  "index.html": "/weather-app-redux-logic-simple-example/index.html",
-  "precache-manifest.0f1b489ad3039dd65c332618e29b81b8.js": "/weather-app-redux-logic-simple-example/precache-manifest.0f1b489ad3039dd65c332618e29b81b8.js",
-  "service-worker.js": "/weather-app-redux-logic-simple-example/service-worker.js"
+  "main.css": "/weather-app-redux-logic-example/static/css/main.1f4270f4.chunk.css",
+  "main.js": "/weather-app-redux-logic-example/static/js/main.5eb56d63.chunk.js",
+  "main.js.map": "/weather-app-redux-logic-example/static/js/main.5eb56d63.chunk.js.map",
+  "static/js/1.6864d395.chunk.js": "/weather-app-redux-logic-example/static/js/1.6864d395.chunk.js",
+  "static/js/1.6864d395.chunk.js.map": "/weather-app-redux-logic-example/static/js/1.6864d395.chunk.js.map",
+  "runtime~main.js": "/weather-app-redux-logic-example/static/js/runtime~main.5032c31a.js",
+  "runtime~main.js.map": "/weather-app-redux-logic-example/static/js/runtime~main.5032c31a.js.map",
+  "static/css/main.1f4270f4.chunk.css.map": "/weather-app-redux-logic-example/static/css/main.1f4270f4.chunk.css.map",
+  "index.html": "/weather-app-redux-logic-example/index.html",
+  "precache-manifest.48863b2223fb69d8c03b934ae1264e7a.js": "/weather-app-redux-logic-example/precache-manifest.48863b2223fb69d8c03b934ae1264e7a.js",
+  "service-worker.js": "/weather-app-redux-logic-example/service-worker.js"
 }
