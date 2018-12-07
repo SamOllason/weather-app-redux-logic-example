@@ -50,7 +50,12 @@ class App extends Component {
 
           <div style={appStyles.headerContainerStyle}>
               <p>Simple example of Redux and Redux-Logic</p>
-              <p>Article and source code</p>
+              <p>
+                  <a href="https://medium.com/@sam_ollason/introduction-to-redux-logic-2f01c97d6c52" target="_blank">Tutorial </a>
+              </p>
+              <p>
+                  <a href="https://github.com/SamOllason/weather-app-redux-logic-example" target="blank">Source</a>
+              </p>
           </div>
 
 
@@ -83,7 +88,7 @@ class App extends Component {
           <div style={appStyles.bottomContainerStyle}>
               <div>Selected City: <div><b>{this.state.selectedCity}</b></div></div>
             <div>Weather in Selected City: {weatherSummaryComponent}</div>
-            <div>Number of requests made:<b>{this.props.numberOfRequests}</b></div>
+            <div>Number of requests made: <div><b>{this.props.numberOfRequests}</b></div></div>
           </div>
       </div>
     );
