@@ -4,7 +4,7 @@ This is a simple application that displays the weather in 3 cities around the wo
 which fetches data from an Open Weather Map API. This application is a basic example of using Redux-Logic
 with React and Redux for handling asynchronous behaviour.
 
-Please see the accompanying tutorial [here](https://medium.com/@sam_ollason).
+Please see the accompanying tutorial [here](https://medium.com/@sam_ollason/introduction-to-redux-logic-2f01c97d6c52).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
